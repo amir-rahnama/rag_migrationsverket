@@ -4,6 +4,10 @@ The official Migrationsverket website contains a large amount of useful informat
 
 It is a fully local Retrieval Augmented Generation (RAG) system built on publicly available content from [migrationsverket.se](https://www.migrationsverket.se) — the Swedish Migration Agency.
 
+## Demo
+
+https://github.com/user-attachments/assets/cc1fcc2c-d3ed-4b3f-852e-7e2d200a3a13
+
 ## What it indexes
 
 - **2,732** HTML pages from migrationsverket.se
