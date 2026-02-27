@@ -6,7 +6,9 @@ It is a fully local Retrieval Augmented Generation (RAG) system built on publicl
 
 ## Demo
 
-[![Demo](https://github.com/user-attachments/assets/6cf29944-e15d-45ca-8d97-7e6f727ba0a7)](https://github.com/user-attachments/assets/cc1fcc2c-d3ed-4b3f-852e-7e2d200a3a13)
+<a href="https://github.com/user-attachments/assets/53537685-b76b-40cc-aecf-bd7aa4095d82">
+  <img src="https://github.com/user-attachments/assets/6cf29944-e15d-45ca-8d97-7e6f727ba0a7" width="700" />
+</a>
 
 ## What it indexes
 
