@@ -32,7 +32,7 @@ LANGUAGE_NAMES = {
     "de": "German",
 }
 
-MODEL = "qwen3:8b"
+MODEL = "qwen3:4b"
 
 SYSTEM_PROMPT = """You are a helpful assistant that answers questions about Migrationsverket (the Swedish Migration Agency).
 Base your answer ONLY on the sources provided.
@@ -40,9 +40,15 @@ If the answer is not found in the sources, say so clearly.
 Always cite the source URLs at the end of your answer."""
 
 
+MAX_CONTEXT_CHARS = 2000
+
+
 def build_prompt(query: str, context: str) -> str:
     lang_code = detect_language(query)
     lang_name = LANGUAGE_NAMES.get(lang_code, lang_code.upper())
+
+    if len(context) > MAX_CONTEXT_CHARS:
+        context = context[:MAX_CONTEXT_CHARS] + "..."
 
     return f"""STRICT INSTRUCTION: Respond ONLY in {lang_name}. Do NOT use Chinese or any other language. Every word of your response must be in {lang_name}.
 
@@ -65,6 +71,7 @@ async def stream_answer(query: str, context: str) -> AsyncIterator[str]:
         model=MODEL,
         messages=messages,
         stream=True,
+        keep_alive=-1,  # keep model loaded in memory indefinitely
     )
 
     async for chunk in stream:

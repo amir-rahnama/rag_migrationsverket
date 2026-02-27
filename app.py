@@ -20,7 +20,7 @@ from src.retriever import format_context, search
 
 load_dotenv()
 
-TOP_K = 5
+TOP_K = 3
 
 
 @cl.on_chat_start

@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/53537685-b76b-40cc-aecf-bd7aa4095d82
 |-----------|-----------|
 | Vector database | [Qdrant](https://qdrant.tech) (local Docker) |
 | Embedding model | [intfloat/multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large) |
-| LLM | [qwen3:8b](https://ollama.com/library/qwen3) via Ollama |
+| LLM | [qwen3:4b](https://ollama.com/library/qwen3) via Ollama |
 | Chat UI | [Chainlit](https://chainlit.io) |
 | Task queue | [RQ](https://python-rq.org) + Redis |
 | HTML parsing | BeautifulSoup + lxml |
@@ -75,7 +75,7 @@ This starts:
 ### 3. Pull the LLM
 
 ```bash
-ollama pull qwen3:8b
+ollama pull qwen3:4b
 ```
 
 ---
