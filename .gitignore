@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+
+# Downloaded data (large, regenerable by running the pipeline)
+data/
+
+# Qdrant vector database
+qdrant_storage/
+
+# Chainlit runtime
+.chainlit/translations/
+
+# macOS
+.DS_Store
+
+# Editor
+.cursor/
+*.swp
+
+.chainlit/translations/

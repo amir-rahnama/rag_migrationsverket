@@ -1,0 +1,16 @@
+rq
+redis
+chainlit
+ollama
+langdetect
+qdrant-client
+sentence-transformers
+pdfplumber
+python-docx
+beautifulsoup4
+lxml
+requests
+urllib3
+langchain-text-splitters
+tqdm
+python-dotenv
