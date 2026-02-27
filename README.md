@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/53537685-b76b-40cc-aecf-bd7aa4095d82
 ### 1. Clone and create virtual environment
 
 ```bash
-git clone <repo-url>
+git clone git@github.com:amir-rahnama/rag_migrationsverket.git
 cd rag_migrationsverket
 
 # pyenv will automatically pick up the correct version from .python-version
